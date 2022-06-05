@@ -22,7 +22,7 @@
 - Variables are case-sensitive ($name and $NAME are two different variables)
 */
 
-// String
+// String // Can be single or double quotes
 $name = 'Azamat';
 var_dump($name);
 echo '<br>';
@@ -43,13 +43,19 @@ $cash_on_hand = 19.09;
 var_dump($cash_on_hand);
 echo '<br>';
 
+/* --- Adding variables to strings -- */
+// Concatenate Strings
 echo '$name is $age years old';
 echo '<br>';
 echo $name . ' is ' . $age . ' years old';
 echo '<br>';
-echo "${name} is $age years old";
+// Double quotes can be used to add variables to strings
+echo "$name is $age years old";
+// Better to do this
+echo "${name} is ${age} years old";
 echo '<br>';
 
+// Arithmetic Operators
 $x = '5' + '5';
 $x = '5' + 5;
 var_dump($x);
@@ -63,7 +69,8 @@ echo '<br>';
 echo 10 % 3;
 echo '<br>';
 
+// Constants - Cannot be changed
 define('HOST', 'localhost');
-define('DB_NAME', 'dev_db');
+define('USER', 'root');
 
 echo HOST;
