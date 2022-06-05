@@ -63,4 +63,3 @@ echo $add(5, 5);
 // Arrow functions
 $multiply = fn($num1, $num2) => $num1 * $num2;
 echo $multiply(5, 5);
-error_log( 'php version is ' . PHP_VERSION );
