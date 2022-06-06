@@ -25,8 +25,10 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
 </head>
 <body>
-<!--    <a href="--><?php //echo $_SERVER['PHP_SELF']; ?><!--?name=Azamat&age=30">Click</a>-->
-
+    <br>
+    <!-- Pass data through a link -->
+    <a href="<?php echo $_SERVER['PHP_SELF']; ?>?name=Azamat&age=30">Click</a>
+    <br><br>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
         <div>
             <label for="name">Name: </label>
